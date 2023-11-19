@@ -1,0 +1,65 @@
+<style>
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+	
+  .frame {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: 80vmin;
+    height: auto;
+    border: 1px solid black;
+  }
+  
+  .cafe {
+    position: absolute;
+    width: 27%;
+    height: 25%;
+    background-color: yellow;
+    border-radius: 0% 0% 50% 50% / 0% 0% 10% 10%;
+    box-shadow: 0px 9vmin red, 0px 9.5vmin silver;
+  }
+  
+    .cafe::after {
+    	position: absolute;
+      content: "";
+      width: 102%;
+      height: 6%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50% 50% 50% 50% / 10% 10% 10% 10%;
+      background-color: yellow;
+      box-shadow: 0px 0.5vmin 0.5vmin -0.2vmin #808080ad, inset 0px -0.5vmin 0.6vmin #61521c70; 
+      
+    
+  	}
+  
+  #cafeLeft {
+    left: 37%;
+    top: 41%;
+  }
+  
+  #cafeRight {
+    left: 65%;
+    top: 40%;
+  }
+  
+
+</style>
+
+
+<div class="frame">
+	<div class="cafe" id="cafeLeft"></div>
+  <div class="cafe" id="cafeRight"></div>
+  <div class="cup" id="cupTop"></div>
+  <div class="cup" id="cupBottom"></div>
+  <div id="mokaPot"></div>
+  
+</div>
