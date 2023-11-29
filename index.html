@@ -1,8 +1,7 @@
 <style>
-  * {
-    box-sizing: border-box;
-  }
-
+  
+  * { box-sizing: border-box; }
+  
   body {
     display: flex;
     justify-content: center;
@@ -10,106 +9,17 @@
     height: 100vh;
     margin: 0;
   }
-
+	
   .frame {
     position: relative;
-    aspect-ratio: 1 / 1;
-    width: 80vmin;
-    height: auto;
+    width: 500px;
+    height: 500px;
     border: 1px solid black;
   }
 
-  @font-face {
-    font-family: "Peignot";
-    src: url("peignotbold.ttf") format("truetype");
-  }
-
-  .cafe {
-    position: absolute;
-    width: 27%;
-    height: 25%;
-    background-color: yellow;
-    border-radius: 0% 0% 50% 50% / 0% 0% 10% 10%;
-    box-shadow: 0px 9vmin red, 0px 9.5vmin silver;
-    white-space: nowrap;
-  }
-
-  .cafe::after {
-    position: absolute;
-    content: "";
-    width: 102%;
-    height: 6%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50% 50% 50% 50% / 10% 10% 10% 10%;
-    background-color: yellow;
-    box-shadow: 0px 0.5vmin 0 -0.2vmin #808080ad, inset 0px -0.6vmin 0 #61521c70;
-
-
-  }
-
-  #cafeLeft {
-    left: 37%;
-    top: 41%;
-  }
-
-  #cafeRight {
-    left: 65%;
-    top: 40%;
-  }
-
-  .cafeLogo {
-    position: absolute;
-    color: navy;
-    font-family: Peignot;
-    top: -7%;
-    left: 32%;
-    font-size: 5vmin;
-    shape-outside: circle(100%);
-  }
-
-  .subtitle {
-    color: navy;
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: bold;
-    position: absolute;
-    top: 75%;
-    left: 35%;
-    font-size: 0.8rem;
-  }
-  
-  .label {
-    color: white;
-    font-family: Arial;
-    position: absolute;
-    top: 95%;
-    left: 42%;
-    font-weight: bold;
-    font-stretch: condensed;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-  
-  
-  
 </style>
 
 
 <div class="frame">
-  <div class="cafe" id="cafeLeft">
-    <p class="cafeLogo">CAFEˊ<br>BUSTE</p>
-    <p class="subtitle">Café Espresso Molid</p>
-    <p class="label">SIEMPRE PURO Y PLE<br>COMO NINGÚN OTRA<br><br>PESO NETO 10 OZ (28</p>
-  </div>
-  <div class="cafe" id="cafeRight">
-    <p class="cafeLogo">CAFEˊ<br>BUSTE</p>
-    <p class="subtitle">Espresso Ground Co</p>
-    <p class="label">ALWAYS PURE AND FLAV<br><br><br>NET WT 10 OZ (28</p>
-  </div>
-  <div class="cup" id="cupTop"></div>
-  <div class="cup" id="cupBottom"></div>
-  <div class="cup" id="cupUpThere"></div>
-  <div id="mokaPot"></div>
-
+	<!-- ur HTML code goes here -->  
 </div>
